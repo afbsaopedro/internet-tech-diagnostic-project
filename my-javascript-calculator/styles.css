@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(135deg, rgba(120,60,140,1) 37%, rgba(65,105,225,1) 100%);
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    margin-top: 70px;
+    color: darkgray;
+}
+
+h1:hover {
+    color: black;
+    background-color: rgba(255, 255, 0, 0.5);
+    transition: 0.3s;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 800px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator button {
+    font-size: 30px;
+    outline: none;
+    border: 1px solid darkgray;
+    background-color: rgba(30, 30, 30);
+    color: darkgray;
+    border-radius: 100px;
+    margin: 5px;
+    box-shadow: 0 4px rgb(80, 80, 80);
+}
+
+.calculator button:hover {
+    background-color: rgba(90, 30, 110, 0.8);
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.calculator button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.large-button {
+    grid-column: span 2;
+}
+
+.screen {
+    grid-column: 1 / -1; /* indica que vai desde a primeira coluna ate a ultima */
+    background-color: rgb(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 100px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+
+.screen .calculation:hover {
+    color: rgb(120,60,140);
+    transition: 0.2s;
+}
+
+.screen .result:hover {
+    color: rgb(120,60,140);
+    transition: 0.2s;
+}
+
+.screen .calculation {
+    color: darkgray;
+    font-size: 22px;
+}
+
+.screen .result {
+    color: rgb(190, 190, 190);
+    font-size: 44px;
+}
+
+a {
+    background-color: rgba(255, 255, 0, 0.5);
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    color: purple;
+    transition: 0.3s;
+}

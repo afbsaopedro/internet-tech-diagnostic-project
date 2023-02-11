@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+}
+
+nav {
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #783c8c;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    font-family: monospace;
+}
+
+nav a:hover {
+    color: darkgray;
+    transition: 0.3s;
+}
+
+.activelink {
+    color: darkgray;
+}
+
+.navbarlogo {
+    position: relative;
+    max-width: 140px;
+    top: 34px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.navbarlogo:hover {
+    filter: brightness(200%) grayscale(100%);
+    transition: 0.3s;
+}
+
+.websitecontainer {
+    color: #783c8c;
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 550px;
+    top: 200px;
+    left: 30%;
+}
+
+.websitecontainer p:hover {
+    color: darkgray;
+    transition: 0.3s;
+}
+
+.websitecontainer img {
+    max-width: 400px;
+    border-radius: 90px 90px 90px 90px;
+}
+
+.websitecontainer img:hover {
+    filter: grayscale(100%) blur(1px);
+    transition: 0.3s;
+    border-radius: 250%;
+}
+
+.websitecontainer a {
+    text-decoration: none;
+    color: #783c8c;
+}
+
+.websitecontainer a:hover {
+    color: darkgray;
+    transition: 0.3s;
+}
